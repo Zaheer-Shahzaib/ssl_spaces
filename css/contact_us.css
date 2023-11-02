@@ -1,0 +1,50 @@
+.first-contact {
+    color: black;
+    font-size: 68px;
+    font-weight: 900;
+}
+
+.after-first-contant {
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: #f2f2f2;
+}
+
+.inputs-contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-sec {
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    color: #908fb0;
+    font-weight: 100;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+button {
+    background-color: #2ca8dd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    appearance: none;
+}

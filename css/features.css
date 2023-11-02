@@ -1,0 +1,101 @@
+.main-sec {
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 45px;
+    width: 100%;
+    height: 100%;
+}
+
+.first-feat {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.second-feat {
+    border-top: 1px solid #f6f6f6;
+    text-align: center;
+}
+
+.img-feat {
+    height: 50px;
+}
+
+.item {
+    margin-left: 30px;
+}
+
+.gallery-feat {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.before-gallery {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.card-hover {
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.card-hover:hover {
+    box-shadow: 0 0 5px 5px rgba(97, 93, 93, 0.2);
+    transform: scale(1.03);
+}
+
+.card-title {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.card-text {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    color: #4f514f;
+}
+
+.button-feat {
+    text-align: center;
+    margin-top: 30px;
+    padding: 7px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #2ca8dd;
+    color: #fff;
+    border: none;
+}
+
+.button-feat:hover {
+    color: #2ca8dd;
+    background-color: transparent;
+    border: 2px solid #2ca8dd;
+    transition: 0.3s;
+}
+
+.zoom {
+    transition: transform 0.3s;
+}
+
+.zoom:hover {
+    animation: zoomInOut 1.5s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
