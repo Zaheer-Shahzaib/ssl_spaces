@@ -296,7 +296,19 @@
     /* End Footer */
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:768px) {
+    nav .links .links-nav {
+        display: block;
+        padding: 10.6px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fffcfc;
+        text-decoration: none;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:766px) {
 
     /* navbar */
     nav .links .links-nav {
