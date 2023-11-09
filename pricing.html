@@ -7,20 +7,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/features.css">
-    <!-- <link rel="stylesheet" href="css/lern&grow.css">
-    <link rel="stylesheet" href="css/contact_us.css">
-    <link rel="stylesheet" href="css/blogs.css"> -->
+    <link rel="stylesheet" href="css/lern&grow.css">
+    <!-- <link rel="stylesheet" href="css/contact_us.css"> -->
+    <link rel="stylesheet" href="css/blogs.css">
     <link rel="stylesheet" href="css/pricing.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>SSL Spaces-space you need</title>
     <style>
+        #container-inside {
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
 
+        #main-container-02 {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            #main-container {
+                display: none;
+            }
+
+            #main-container-02 {
+                display: block;
+            }
+
+            .main-sec {
+                margin-top: 90px;
+                margin-bottom: 30px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .first-pricing {
+                font-size: 40px;
+                font-weight: 800;
+            }
+
+            .second-pricing {
+                font-size: 35px;
+                font-weight: 900;
+                color: #999999;
+            }
+        }
+
+        #Speak-to-Our {
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        #speak-col-1 {
+            text-decoration: none;
+            color: #8e8e8e;
+
+        }
+
+        #speak-col-mein {
+            border: 1px solid rgb(233, 228, 228);
+            border-radius: 5px;
+        }
+
+        #speak-col-mein:hover {
+            border: 1px solid #2ca8dd;
+        }
+
+        #last-pricing {
+            border-radius: 20px;
+            background-color: #f8f8f8;
+        }
     </style>
 </head>
 
-<body>
+<body id="features-page">
     <!-- navbar part -->
     <nav>
         <input id="nav-toggle" type="checkbox">
@@ -63,13 +126,13 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="links-nav">
+                <a href="pricing.html" class="links-nav">
                     Pricing
                 </a>
             </li>
             <li>
-                <a href="contact_us.html" class="links-nav" style="color: #2ca8dd;">
-                    Contact Us
+                <a href="partners.html" class="links-nav">
+                    Partners
                 </a>
             </li>
         </ul>
@@ -81,8 +144,10 @@
     </nav>
     <!--End navbar part -->
 
-    <!-- first feat part  -->
-    <div class="container-fluid">
+
+
+    <!-- Screen Reso. 1280px to 768px -->
+    <div class="container-fluid" id="main-container">
         <div class="row">
             <div class="main-sec">
                 <h1 class="first-pricing" data-aos="zoom-in">
@@ -93,123 +158,1784 @@
                     Open Space Plans
                 </h1>
             </div>
+            <div>
+
+            </div>
         </div>
-        <div class="row p-5">
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0"></div>
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0">
-                <div class="card" style="background: #2ca8dd;">
-                    <div class="card-body">
-                        <div class="custom-box">
-                            <h6 class="text-center" style="padding-top: 5px;">
-                                Most Popular
-                            </h6>
+
+
+        <!-- Open Space Plans -->
+        <div class="container mt-4" id="container-inside">
+            <div class="chair-container">
+                <img src="images/chair.png" alt="Chair" class="chair-image" id="chair">
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card" style="background: #2ca8dd;">
+                                <div class="card-body">
+                                    <div class="custom-box">
+                                        <h6 class="text-center most-popular-card">
+                                            Most Popular
+                                        </h6>
+                                    </div>
+                                    <h5 class="card-title text-light">
+                                        Hot Seat Lite
+                                    </h5>
+                                    <div class="p-3 text-light">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            13,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="card-title text-light">
-                            Hot Seat Lite
-                        </h5>
-                        <div class="p-3 text-light">
-                            <h6 class="text-left">
-                                PKR
-                            </h6>
-                            <h1 class="text-center">
-                                13,000
-                            </h1>
-                            <h6 class="text-end">
-                                Per Month
-                            </h6>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Hot Seat +
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            16,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <button class="pricing-book-button">
-                            Book Now
-                        </button>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Dedicated Lite
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            21,200
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Dedicated +
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            26,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0">
-                <div class="card ">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Hot Seat +
-                        </h5>
-                        <div class="p-3">
-                            <h6 class="text-left">
-                                PKR
-                            </h6>
-                            <h1 class="text-center">
-                                16,000
-                            </h1>
-                            <h6 class="text-end">
-                                Per Month
-                            </h6>
+            <div class="row bg-light pt-3">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
                         </div>
-                        <button class="pricing-book-button">
-                            Book Now
-                        </button>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">24 hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">24 hours</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0">
-                <div class="card ">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Dedicated Lite
-                        </h5>
-                        <div class="p-3">
-                            <h6 class="text-left">
-                                PKR
-                            </h6>
-                            <h1 class="text-center">
-                                21,200
-                            </h1>
-                            <h6 class="text-end">
-                                Per Month
-                            </h6>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">All Utilities & Facilities ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
                         </div>
-                        <button class="pricing-book-button">
-                            Book Now
-                        </button>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 p-0">
-                <div class="card ">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Dedicated +
-                        </h5>
-                        <div class="p-3">
-                            <h6 class="text-left">
-                                PKR
-                            </h6>
-                            <h1 class="text-center">
-                                26,000
-                            </h1>
-                            <h6 class="text-end">
-                                Per Month
-                            </h6>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Meeting Room Access</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">06 Hours</p>
                         </div>
-                        <button class="pricing-book-button">
-                            Book Now
-                        </button>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">08 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">08 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">16 Hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Alumni Discount ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">05%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">10%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">05%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">10%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Partners Benefits ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-2 col-md-2">
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Open Space Plans -->
+
+
+        <!-- Night Space Plans -->
+        <div class="row">
+            <h1 class="second-pricing text-center p-5">
+                Night Space Plans
+            </h1>
+        </div>
+        <div class="container mt-4" id="container-inside">
+            <div class="chair-container">
+                <img src="images/chair.png" alt="Chair" class="chair-image" id="chair">
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card" style="background: #2ca8dd;">
+                                <div class="card-body">
+                                    <div class="custom-box">
+                                        <h6 class="text-center most-popular-card">
+                                            Most Popular
+                                        </h6>
+                                    </div>
+                                    <h5 class="card-title text-light">
+                                        Hot Seat Lite
+                                    </h5>
+                                    <div class="p-3 text-light">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            10,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Hot Seat +
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            16,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Dedicated Lite
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            15,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Dedicated +
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            26,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-light pt-3">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">24 hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="" style="color: #bebebe;white-space: nowrap; text-align: center;">All Utilities &
+                        Facilities ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Meeting Room Access</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">06 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">08 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">08 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">16 Hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Alumni Discount ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">05%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">10%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">05%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">10%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Partners Benefits ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-2 col-md-2">
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Night Space Plans -->
+
+        <!-- Day Pass Plan Section  -->
+        <div class="row">
+            <h1 class="second-pricing text-center p-5">
+                Day Pass Plan
+            </h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row p-3">
+                <div class="col-lg-12 col-md-12">
+                    <div class="row mb-5">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card"
+                                style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Day Pass
+                                    </h5>
+                                    <div class="px-5 p-1">
+                                        <h6 class="text-left" style="font-weight: 100;">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            35,00
+                                        </h1>
+                                        <h6 class="text-end" style="font-weight: 100;">
+                                            Per Day
+                                        </h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec" style="white-space: nowrap;">24
+                                                    Hours Access</b>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec">01 Day Pass</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec">Meeting Room Available
+                                                    on Demand</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card"
+                                style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Week Pass
+                                    </h5>
+                                    <div class="px-5 p-1">
+                                        <h6 class="text-left" style="font-weight: 100;">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            92,00
+                                        </h1>
+                                        <h6 class="text-end" style="font-weight: 100;">
+                                            Per Week
+                                        </h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class=" d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec" style=" white-space: nowrap;">24
+                                                    Hours Access</b>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec">07 Days Pass</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec">Meeting Room Available
+                                                    on Demand</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="background: #2ca8dd;border-radius: 20px;">
+                                <div class="card-body">
+                                    <div class="custom-box">
+                                        <h6 class="text-center most-popular-card">
+                                            Most Popular
+                                        </h6>
+                                    </div>
+                                    <h5 class="card-title text-light">
+                                        Virtual Office
+                                    </h5>
+                                    <div class="text-light px-5 p-1">
+                                        <h6 class="text-left" style="font-weight: 100;">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            62,00
+                                        </h1>
+                                        <h6 class="text-end" style="font-weight: 100;">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec" style=" white-space: nowrap;">Shared Landline</b>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec" style=" white-space: nowrap;">Business Address</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center">
+                                                <img style="height: 15px;" src="images/task.png" alt="">
+                                                <b id="day-plan-dec" style=" white-space: nowrap;">8
+                                                    Hours Meeting Room
+                                                    Access Monthly</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--End first feat part  -->
-        <!-- second main text part  -->
 
+        <!--End Day Pass Plan Section  -->
+
+
+
+        <!-- Private Studio section  -->
+        <div class="row">
+            <h1 class="second-pricing text-center p-5">
+                Private Studio
+            </h1>
+        </div>
+        <div class="container mt-4 mb-5" id="container-inside">
+            <div class="chair-container">
+                <img src="images/chair.png" alt="Chair" class="chair-image" id="chair">
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Morning Studio
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            75,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Night Studio
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            50,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card" style="background: #2ca8dd;">
+                                <div class="card-body">
+                                    <div class="custom-box">
+                                        <h6 class="text-center most-popular-card">
+                                            Most Popular
+                                        </h6>
+                                    </div>
+                                    <h5 class="card-title text-light">
+                                        Studio++
+                                    </h5>
+                                    <div class="p-3 text-light">
+                                        <h6 class="text-left">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            100,000
+                                        </h1>
+                                        <h6 class="text-end">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                    <button class="pricing-book-button">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 p-0">
+                            <div class="card" style="border-radius: 20px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                    </h5>
+                                    <div class="p-3">
+                                        <h6 class="text-left">
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                        </h1>
+                                        <h6 class="text-end">
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-light pt-3">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">9am to 9pm</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: bold;">24 hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="" style="color: #bebebe;white-space: nowrap; text-align: center;">All Utilities &
+                        Facilities ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Meeting Room Access</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">06 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">08 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">08 Hours</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Alumni Discount ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">05%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">10%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">05%</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Partners Benefits ⓘ</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3 text-center">
+                            <img style="height: 20px;" src="images/tick.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+                <div class="col-lg-2 col-md-2">
+                    <p class="text-start" style="color: #bebebe;white-space: nowrap;">Number of People</p>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">
+                                5 -6 people
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">
+                                5 -6 people
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p class="text-center" style="font-weight: 600;">
+                                5 -6 people
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-2 col-md-2">
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Private Studio section  -->
+
+        <!-- After Photo Studia section  -->
+        <div class="container p-5 mt-5">
+            <div class="row p-3">
+                <div class="col-lg-12 col-md-12">
+                    <div class="row mb-5">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card"
+                                style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Locker
+                                    </h5>
+                                    <div class="px-5 p-1">
+                                        <h6 class="text-left" style="font-weight: 100;">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            15,00
+                                        </h1>
+                                        <h6 class="text-end" style="font-weight: 100;">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card"
+                                style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Call Handling
+                                    </h5>
+                                    <div class="px-5 p-1">
+                                        <h6 class="text-left" style="font-weight: 100;">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            5,000
+                                        </h1>
+                                        <h6 class="text-end" style="font-weight: 100;">
+                                            Per Month
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card"
+                                style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Printing
+                                    </h5>
+                                    <div class="px-5 p-1">
+                                        <h6 class="text-left" style="font-weight: 100;">
+                                            PKR
+                                        </h6>
+                                        <h1 class="text-center price-card">
+                                            5,000
+                                        </h1>
+                                        <h6 class="text-end" style="font-weight: 100;">
+                                            Per Black and White Print
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End After Photo Studia section  -->
+
+        <!-- Speak to Our Community Manager -->
+        <div class="container  mb-5" id="Speak-to-Our">
+            <div class="row">
+                <h3 class="text-center pt-5">
+                    Speak to Our Community Manager
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 p-4">
+                    <a href="#" id="speak-col-1">
+                        <div class="text-center p-3" id="speak-col-mein">
+                            <div>
+                                <img src="images/call-icon.png" alt="">
+                            </div>
+                            <div class="pt-2">
+                                <p>03269909959</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <a href="#" id="speak-col-1">
+                        <div class="text-center p-3" id="speak-col-mein">
+                            <div>
+                                <img src="images/headphone-icon.png" alt="">
+                            </div>
+                            <div class="pt-2">
+                                <p>Live Chat</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <a href="#" id="speak-col-1">
+                        <div class="text-center p-3" id="speak-col-mein">
+                            <div class="text-center">
+                                <img src="images/call-back-icon.png" alt="">
+                            </div>
+                            <div class="pt-2">
+                                <p>Get a Call Back</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--End Speak to Our Community Manager -->
+
+        <!-- last section  -->
+        <div class="container mt-5 p-5" id="last-pricing">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 style="font-size: 60px; font-weight:800; color: #2ca8dd;">We Know co-working</h1>
+                    <h2 style="font-size:45px;font-weight: 700; color: #000;">So we've built one for you</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <p>
+                        SSL Spaces is an incredible co-working studio where you can learn to connect, <br>
+                        collaborate, and create. Join us to get your creative juices flowing. <br>
+                        The ever <br>
+                        changing and easy going environment of SSL Spaces provides you adaptability <br>
+                        to work where you want, when you want and scale the best of services and <br>
+                        opportunities.
+                </div>
+                <div class="col-lg-5"></div>
+                </p>
+            </div>
+        </div>
+        <!--End last section  -->
     </div>
-
-
-    <!-- End second main text part  -->
-
+    <!--End Screen Reso. 1280px to 768px -->
 
 
 
-    <footer class="footer">
+
+
+    <!-- Screen Reso. 768px to below -->
+    <div class="container-fluid" id="main-container-02">
+        <div class="row">
+            <div class="main-sec">
+                <h1 class="first-pricing" data-aos="zoom-in">
+                    Coworking <br> Space Prices & Packages
+                </h1>
+                <h3 class="p-2">Flexible and Affordable</h3>
+                <h1 class="second-pricing">
+                    Open Space Plans
+                </h1>
+            </div>
+        </div>
+        <!-- Open Space Plans -->
+
+        <!-- 1st section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="background: #2ca8dd; border-radius: 20px;box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                            <div class="card-body">
+                                <div class="custom-box">
+                                    <h6 class="text-center most-popular-card">
+                                        Most Popular
+                                    </h6>
+                                </div>
+                                <h5 class="card-title text-light">
+                                    Hot Seat Lite
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3 text-light">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                13,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">06 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">05%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 05</p>
+            </div>
+        </div>
+        <!--End 1st section  -->
+
+        <!-- 2nd section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.123);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Hot Seat +
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                16,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">10%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">08 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 02</p>
+            </div>
+        </div>
+        <!--End 2nd section  -->
+
+        <!-- 3rd section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.123);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Dedicated Lite
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                21,200
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">08 House</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">10%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 10</p>
+            </div>
+        </div>
+        <!-- 3rd section  -->
+
+        <!-- 4th section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.123);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Dedicated +
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                26,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">24 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">16 House</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">10%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 08</p>
+            </div>
+        </div>
+        <!-- 4th section  -->
+
+
+        <!-- Night Space Section  -->
+        <div class="row">
+            <div class="main-sec">
+                <h1 class="second-pricing pb-2">
+                    Night Space Plans
+                </h1>
+            </div>
+        </div>
+        <!-- 1st section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="background: #2ca8dd; border-radius: 20px;box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.123);">
+                            <div class="card-body">
+                                <div class="custom-box">
+                                    <h6 class="text-center most-popular-card">
+                                        Most Popular
+                                    </h6>
+                                </div>
+                                <h5 class="card-title text-light">
+                                    Hot Seat Lite
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3 text-light">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                10,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">9am to 9pm</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">06 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">06%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 05</p>
+            </div>
+        </div>
+        <!--End 1st section  -->
+
+        <!-- 2nd section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.123);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Hot Seat +
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                16,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">24 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">10%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">08 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 02</p>
+            </div>
+        </div>
+        <!--End 2nd section  -->
+
+        <!-- 3rd section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.123);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Dedicated Lite
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                15,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">9am to 7pm</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">08 House</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">5%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 10</p>
+            </div>
+        </div>
+        <!-- 3rd section  -->
+
+        <!-- 4th section  -->
+        <div class="row p-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="card"
+                            style="border-radius: 20px; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.123);">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Dedicated +
+                                </h5>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="p-3">
+                                            <h6 class="text-left">
+                                                PKR
+                                            </h6>
+                                            <h1 class="text-center price-card">
+                                                26,000
+                                            </h1>
+                                            <h6 class="text-end">
+                                                Per Month
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                </div>
+                                <button class="pricing-book-button">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light pt-3">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Time</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">24 Hours</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">All Utilities & Facilities</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold; color: #bebebe;">Meeting Room Access</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">16 House</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Alumni Discount</p>
+            </div>
+            <div class="col-6 text-center">
+                <p class="text-center" style="font-weight: bold;">10%</p>
+            </div>
+        </div>
+        <div class="row pt-3" style="border-bottom: 1px solid #f8f8f8;">
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;color: #bebebe;">Partners Benefits</p>
+            </div>
+            <div class="col-6 text-center">
+                <img style="height: 20px;" src="images/tick.png" alt="">
+            </div>
+        </div>
+        <div class="row bg-light pt-3 mb-2">
+            <div class="col-6">
+                <p class="text-center" style="color: #2ca8dd; font-weight: bold;">Seats Left</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center" style="font-weight: bold;">Only 08</p>
+            </div>
+        </div>
+        <!-- 4th section  -->
+        <!-- Night Space Section  -->
+    </div>
+    <!--End Screen Reso. 768px to below -->
+
+    <!-- Footer part -->
+    <footer class="footer p-4">
         <div class="container-footer">
             <div class="row">
-                <div class="footer-col" data-aos="zoom-in">
+                <div class="footer-col">
                     <h4>About</h4>
                     <ul>
                         <li class="li-footer">
@@ -217,48 +1943,241 @@
                                 SSL Spaces is an affordable coworking space in Lahore that will help you and your
                                 business
                                 grow. With our affluent shared office space in Lahore, you touch the peak of
-                                productivity. Take advantage of owning your own office space in Lahore. Our shared
-                                office space is designed to provide you with value and flexibility.
+                                productivity. Take advantage of owning your own office space in Lahore.
                             </p>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-col" data-aos="zoom-in">
+                <div class="footer-col">
                     <h4>Useful Links</h4>
                     <ul>
                         <li>
-                            <a href="#">Our Packages</a>
-                            <a href="#">Features</a>
-                            <a href="#">Learn & Grow</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col" data-aos="zoom-in">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li>
-                            <a href="#">info@sslspaces.com</a>
-                            <a href="#">+92 321 499 7389 </a>
-                            <a href="#">Rafi Group, Landmark Plaza, Jail Road, Lahore</a>
+                            <a class="links-footer" href="#">
+                                Our Packages
+                            </a>
+                            <a class="links-footer" href="#">
+                                Features
+                            </a>
+                            <a class="links-footer" href="#">
+                                Learn & Grow
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <iframe data-aos="zoom-in"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13602.416431111427!2d74.3469698!3d31.5350316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904ef575fdb87%3A0x50e89ba5e8d171ed!2sRafi%20Group%20Landmark%20Plaza!5e0!3m2!1sen!2s!4v1698661369262!5m2!1sen!2s"
-                        width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div data-aos="zoom-out">
-                        <img style="height: 40px; margin: 10px;" src="images/instagram.png" alt="">
-                        <img style="height: 40px; margin: 10px;" src="images/facebook.png" alt="">
-                        <img style="height: 40px; margin: 10px;" src="images/twitter.png" alt="">
-                        <img style="height: 40px; margin: 10px;" src="images/linkedin.png" alt="">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <p style="color: #ffffff;font-weight: bold; margin-bottom: 0px;">Email :</p>
+                            <a href="mailto:info@sslspaces.com">info@sslspaces.com</a>
+                            <p style="color: #ffffff;font-weight: bold; margin-bottom: 0px;">Phone :</p>
+                            <a href="https://wa.me/923214997389" target="_blank">+92 321 499 7389</a>
+                            <p style="color: #ffffff;font-weight: bold; margin-bottom: 0px;">Location :</p>
+                            <a href="https://www.google.com/maps?q=Rafi+Group,+Landmark+Plaza,+Jail+Road,+Lahore"
+                                target="_blank">
+                                Rafi Group, Landmark Plaza, Jail Road, Lahore
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13602.416431111427!2d74.3469698!3d31.5350316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904ef575fdb87%3A0x50e89ba5e8d171ed!2sRafi%20Group%20Landmark%20Plaza!5e0!3m2!1sen!2s!4v1698661369262!5m2!1sen!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="main-dev-social-link">
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-footer-link " src="images/instagram.png" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-footer-link" src="images/tiktok.png" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-footer-link" src="images/twitter.png" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <img class="social-footer-link" src="images/facebook.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!--End Footer part -->
+    <button id="scrollToTopBtn">
+        <b><i class="fa-solid fa-arrow-up"></i></b>
+    </button>
 
+
+
+
+
+    <div>
+        <option value="Solidity">Solidity</option>
+        <option value="Big Data">Big Data</option>
+        <option value="Solutions">Solutions</option>
+        <option value="Django">Django</option>
+        <option value="Tailwind CSS">Tailwind CSS</option>
+        <option value="Umbraco">Umbraco</option>
+        <option value="SaaS">SaaS</option>
+        <option value="Codelgniter">Codelgniter</option>
+        <option value="Ansible">Ansible</option>
+        <option value="Cassandra">Cassandra</option>
+        <option value="Salesforce">Salesforce</option>
+        <option value="Sage">Sage</option>
+        <option value="Dart">Dart</option>
+        <option value="Blockchain">Blockchain</option>
+        <option value="Vue.js">Vue.js</option>
+        <option value="jQuery">jQuery</option>
+        <option value="Database">Database</option>
+        <option value="CSS/Bootstrap">CSS/Bootstrap</option>
+        <option value="Chrome Extendions">Chrome Extendions</option>
+        <option value="D3.js">D3.js</option>
+        <option value="Figma">Figma</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Shopify">Shopify</option>
+        <option value="Flutter">Flutter</option>
+        <option value="Cordova">Cordova</option>
+        <option value="ML/CV">ML/CV</option>
+        <option value="Full Stack Angular">Full Stack Angular</option>
+        <option value="Full Stack Kotlin">Full Stack Kotlin</option>
+        <option value="My SQL">My SQL</option>
+        <option value="IOS">IOS</option>
+        <option value="GraphQL">GraphQL</option>
+        <option value="RXJS">RXJS</option>
+        <option value="Drupal">Drupal</option>
+        <option value="ML/NLP">ML/NLP</option>
+        <option value="Go">Go</option>
+        <option value="R Programming">R Programming</option>
+        <option value="CI/CD">CI/CD</option>
+        <option value="Stripe">Stripe</option>
+        <option value="Ruby">Ruby</option>
+        <option value="JSON">JSON</option>
+        <option value="NLP">NLP</option>
+        <option value="Spring">Solidity</option>
+        <option value="LAMP">LAMP</option>
+        <option value="Rust">Rust</option>
+        <option value="BigCommerce">BigCommerce</option>
+        <option value="Delphi">Delphi</option>
+        <option value="Backbone.js">Backbone.js</option>
+        <option value="Database Administrator">Database Administrator</option>
+        <option value="Ethereum">Ethereum</option>
+        <option value="C">C</option>
+        <option value="Perl">Perl</option>
+        <option value="NextJS">NextJS</option>
+        <option value="GCP">GCP</option>
+        <option value="Xamarin">Xamarin</option>
+        <option value="Gatsby">Gatsby</option>
+        <option value="Slack">Slack</option>
+        <option value="Flask">Flask</option>
+        <option value="ASP.NET">ASP.NET</option>
+        <option value="VBA">VBA</option>
+        <option value="XML">XML</option>
+        <option value="Objective-C">Objective-C</option>
+        <option value="Ember.js">Ember.js</option>
+        <option value="Algorithms">Algorithms</option>
+        <option value="Elasticsearch">Elasticsearch</option>
+        <option value="VB.NET">VB.NET</option>
+        <option value="FireBase">FireBase</option>
+        <option value="Oracle">Oracle</option>
+        <option value="Hashkell">Hashkell</option>
+        <option value="Terraform">Terraform</option>
+        <option value="Redis">Redis</option>
+        <option value="TensorFlow">TensorFlow</option>
+        <option value="NoSQL">NoSQL</option>
+        <option value="ETL Testing">ETL Testing</option>
+        <option value="Symfony">Symfony</option>
+        <option value="Business Intelligence">Business Intelligence</option>
+        <option value="Erlang">Erlang</option>
+        <option value="Elixir">Elixir</option>
+        <option value="MongoDB">MongoDB</option>
+        <option value="Drupal">Drupal</option>
+        <option value="Linux">Linux</option>
+        <option value="CSS">CSS</option>
+        <option value="Data Analytics">Data Analytics</option>
+        <option value="MEAN">MEAN</option>
+        <option value="Spark">Spark</option>
+        <option value="Jenkins">Jenkins</option>
+        <option value="Docker">Docker</option>
+        <option value="Spring Boot">Spring Boot</option>
+        <option value="Microservices">Microservices</option>
+        <option value="VanillaJS">VanillaJS</option>
+        <option value="Magento">Magento</option>
+        <option value="AJAX">AJAX</option>
+        <option value="Apache Kafka">Apache Kafka</option>
+        <option value="DevOps">DevOps</option>
+        <option value="Integrations">Integrations</option>
+        <option value="Web3">Web3</option>
+        <option value="Desktop">Desktop</option>
+        <option value="Infrastructure Security">Infrastructure Security</option>
+        <option value="Data Operations">Data Operations</option>
+        <option value="Cloud Security">Cloud Security</option>
+        <option value="DevOps Cloud Infrastructure">DevOps Cloud Infrastructure</option>
+        <option value="Data Warehouse">Data Warehouse</option>
+        <option value="Cloud Enterprise Architect">Cloud Enterprise Architect</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+        <option value="Solidity">Solidity</option>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var mybutton = document.getElementById("scrollToTopBtn");
+
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            mybutton.addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        });
+    </script>
+    <script>
+        const currentURL = window.location.href;
+        const navLinks = document.querySelectorAll('.links-nav');
+        navLinks.forEach(link => {
+            if (link.href === currentURL) {
+                link.style.color = '#2ea9dd';
+            }
+        });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

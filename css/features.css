@@ -92,7 +92,7 @@
 }
 
 .zoom:hover {
-    animation: zoomInOut 1.5s infinite;
+    animation: zoomInOut 2s infinite;
 }
 
 @keyframes zoomInOut {
@@ -101,7 +101,7 @@
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(0.9);
     }
 
     100% {

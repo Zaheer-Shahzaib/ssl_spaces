@@ -83,7 +83,9 @@ nav .icon-burger .line {
     transition: all .3s ease-in-out;
 }
 
-
+.links-nav.active {
+    color: #2ea9dd;
+}
 
 @media screen and (max-width:768px) {
     nav .logo {
@@ -327,6 +329,29 @@ nav .icon-burger .line {
     flex-wrap: wrap;
 }
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    background-color: transparent;
+    border: 3px solid #b0b0b0;
+    color: #b0b0b0;
+    cursor: pointer;
+    padding: 15px 20px 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #2ca8dd;
+    color: #b0b0b0;
+}
+
 .footer ul {
     list-style: none;
 }
@@ -370,7 +395,7 @@ nav .icon-burger .line {
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 600;
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
@@ -477,6 +502,8 @@ nav .icon-burger .line {
 
     .footer-col ul li a {
         font-size: 16px;
+        font-weight: 600;
+
     }
 
     .footer-col iframe {
