@@ -48,10 +48,10 @@
     margin-top: 30px;
     padding: 7px;
     width: 35%;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: #2ca8dd;
     color: #fff;
-    border: none;
+    border: 1px solid #2ca8dd;
 }
 
 .button-lern:hover {
@@ -72,7 +72,8 @@
     border: none;
     padding: 7px;
     width: 50%;
-    border-radius: 5px;
+    border-radius: 50px;
+    border: 1px solid #2ca8dd;
 }
 
 .enroll-btn:hover {
